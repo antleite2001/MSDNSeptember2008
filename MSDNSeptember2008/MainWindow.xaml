@@ -5,8 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MSDNSeptember2008"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="450" Width="800" 
+        Background="Aqua">
+    <Grid Margin="10" Background="DarkKhaki">
+    <Button Margin="60" Background="Green" 
+            Click="Button_Click">
+      <StackPanel Height="100" Width="300" 
+                  Background="Blue">
+        <Image  Height="50" Width="50" 
+                Style="{DynamicResource ImageStyle1}" 
+                Source="pack://application:,,/Resources/folderProperties.png" >
+           
+
+        </Image>
+        <TextBlock Height="50" Width="50"
+                   Background="Purple" Text="123" 
+                   Style="{DynamicResource TextBlockStyle1}"></TextBlock>
+      </StackPanel>
+    </Button>
+
+     
+      
+  </Grid>
 </Window>
